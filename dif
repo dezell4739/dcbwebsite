@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DCB – Design Create Build</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Header with Logo -->
+  <header class="bg-gray-900 text-white py-12 text-center">
+    <img src="https://dcb-homes-assets.netlify.app/logo.png" alt="DCB Logo" class="mx-auto w-72 mb-4">
+  </header>
+
+  <!-- About Section -->
+  <section class="py-12 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p class="text-lg">DCB is a full-service construction company offering residential building, remodeling, demolition, and land preparation. We focus on quality, transparency, and customer satisfaction.</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-8 text-center">Our Services</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white shadow rounded p-6 text-center">
+          <h3 class="font-semibold text-xl mb-2">Residential Construction</h3>
+          <p>From foundation to finish, we build your dream home.</p>
+        </div>
+        <div class="bg-white shadow rounded p-6 text-center">
+          <h3 class="font-semibold text-xl mb-2">Remodeling</h3>
+          <p>Interior and exterior upgrades tailored to your needs.</p>
+        </div>
+        <div class="bg-white shadow rounded p-6 text-center">
+          <h3 class="font-semibold text-xl mb-2">Demolition</h3>
+          <p>Safe and efficient removal of old structures.</p>
+        </div>
+        <div class="bg-white shadow rounded p-6 text-center">
+          <h3 class="font-semibold text-xl mb-2">Land Preparation</h3>
+          <p>Grading, clearing, and prepping your site the right way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-12 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-center">Our Work</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- 17 Images -->
+        <!-- External hosted images -->
+        <!-- Replace with your actual hosted image URLs if needed -->
+        ${[...Array(17).keys()].map(i => `<img src="https://dcb-homes-assets.netlify.app/IMG_${i+1}.jpg" alt="Project ${i+1}" class="rounded shadow">`).join('\n')}
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="py-12">
+    <div class="max-w-xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+      <form action="https://formspree.io/f/mwpbdlew" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Name" class="w-full p-3 border rounded" required>
+        <input type="email" name="email" placeholder="Email" class="w-full p-3 border rounded" required>
+        <textarea name="message" placeholder="Your message..." class="w-full p-3 border rounded" rows="4" required></textarea>
+        <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded hover:bg-blue-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Quote Form -->
+  <section class="py-12 bg-blue-50">
+    <div class="max-w-xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-center">Request a Quote</h2>
+      <form action="https://formspree.io/f/mwpbdlew" method="POST" class="space-y-4">
+        <input type="text" name="project" placeholder="Project Type" class="w-full p-3 border rounded" required>
+        <input type="text" name="location" placeholder="Location" class="w-full p-3 border rounded" required>
+        <input type="tel" name="phone" placeholder="Phone Number" class="w-full p-3 border rounded" required>
+        <button type="submit" class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-700">Get Quote</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-center">Serving Mariposa, CA</h2>
+      <iframe class="w-full h-[450px] rounded" loading="lazy" allowfullscreen frameborder="0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.1380063138775!2d-119.96658662426628!3d37.48455372815426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096e16c30c9cd21%3A0x6fc10a426c7e6d77!2sMariposa%2C%20CA%2095338!5e0!3m2!1sen!2sus!4v1720285643556"></iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 DCB – Design Create Build. All rights reserved.</p>
+  </footer>
+</body>
+</html>
