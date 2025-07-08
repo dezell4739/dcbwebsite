@@ -45,12 +45,24 @@
     </div>
   </section>
 
-  <!-- Gallery -->
-  <section class="py-12 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold mb-6 text-center">Our Work</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        ${[...Array(17).keys()].map(i => `<img src="https://dcb-homes-assets.netlify.app/IMG_${i+1}.jpg" alt="Project ${i+1}" class="rounded shadow">`).join('\n')}
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+  <img src="img1.jpg" alt="Project 1" class="rounded-lg shadow-md" />
+  <img src="img2.jpg" alt="Project 2" class="rounded-lg shadow-md" />
+  <img src="img3.jpg" alt="Project 3" class="rounded-lg shadow-md" />
+  <img src="img4.jpg" alt="Project 4" class="rounded-lg shadow-md" />
+  <img src="img5.jpg" alt="Project 5" class="rounded-lg shadow-md" />
+  <img src="img6.jpg" alt="Project 6" class="rounded-lg shadow-md" />
+  <img src="img7.jpg" alt="Project 7" class="rounded-lg shadow-md" />
+  <img src="img8.jpg" alt="Project 8" class="rounded-lg shadow-md" />
+  <img src="img9.jpg" alt="Project 9" class="rounded-lg shadow-md" />
+  <img src="img10.jpg" alt="Project 10" class="rounded-lg shadow-md" />
+  <img src="img11.jpg" alt="Project 11" class="rounded-lg shadow-md" />
+  <img src="img12.jpg" alt="Project 12" class="rounded-lg shadow-md" />
+  <img src="img13.jpg" alt="Project 13" class="rounded-lg shadow-md" />
+  <img src="img14.jpg" alt="Project 14" class="rounded-lg shadow-md" />
+  <img src="img15.jpg" alt="Project 15" class="rounded-lg shadow-md" />
+  <img src="img16.jpg" alt="Project 16" class="rounded-lg shadow-md" />
+</div>
       </div>
     </div>
   </section>
