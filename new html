@@ -134,10 +134,12 @@
   </section>
 
 <footer class="bg-gray-900 text-white text-center py-6">
-  <p>&copy; 2025 DCB – Design Create Build</p>
-  <p class="mt-2">
-    <a href="https://www.facebook.com/profile.php?id=61577983210576" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">
-      <i class="fab fa-facebook fa-lg mr-1"></i>Follow us on Facebook
-    </a>
-  </p>
-</footer>
+    <p>&copy; 2025 DCB – Design Create Build. All rights reserved.</p>
+    <p class="mt-2">
+      <a href="https://www.facebook.com/profile.php?id=61577983210576" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">
+        <i class="fab fa-facebook fa-lg mr-1"></i>Follow us on Facebook
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
