@@ -5,13 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DCB – Design Create Build</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-papoyhC8z9xkgN7l9D0Ab7DoqHJ+u8kuSkULgZ1u5ghI/0peh6nFOkWkS2DIlA1HvT3Z0zAZZ7oDw7P88t+k1A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
@@ -80,6 +73,54 @@
       </div>
     </div>
   </section>
+
+  <!-- Estimator -->
+  <section class="py-12 bg-blue-50">
+    <div class="max-w-xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-center">Project Estimator</h2>
+      <form id="estimator-form" class="space-y-4">
+        <label class="block">
+          <span class="font-semibold">Project Type</span>
+          <select id="projectType" class="w-full p-3 border rounded" required>
+            <option value="build">New Construction</option>
+            <option value="remodel">Remodel</option>
+            <option value="demo">Demolition</option>
+            <option value="prep">Land Preparation</option>
+          </select>
+        </label>
+
+        <label class="block">
+          <span class="font-semibold">Square Footage</span>
+          <input type="number" id="squareFeet" class="w-full p-3 border rounded" placeholder="e.g. 1200" required>
+        </label>
+
+        <button type="submit" class="bg-green-600 text-white py-3 px-6 rounded hover:bg-green-700">
+          Estimate Cost
+        </button>
+      </form>
+      <div id="estimateResult" class="mt-4 text-xl font-semibold text-center"></div>
+      <p class="text-sm text-gray-600 mt-4 text-center">
+        This tool provides a general project estimate. Final costs vary based on site conditions, material availability, location, and market volatility. We recommend adding 10–20% to this estimate to reflect realistic budgeting, which may be affected by factors like inflation, diesel prices, tariffs, or extreme weather.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('estimator-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const rates = {
+        build: 220,
+        remodel: 250,
+        demo: 200,
+        prep: 225
+      };
+      const type = document.getElementById('projectType').value;
+      const sqft = parseFloat(document.getElementById('squareFeet').value);
+      const cost = sqft * (rates[type] || 0);
+      document.getElementById('estimateResult').textContent =
+        isNaN(cost) ? 'Please enter valid data.' : `Estimated Cost: $${cost.toLocaleString()}`;
+    });
+  </script>
 
   <!-- Contact Form -->
   <section class="py-12">
@@ -151,9 +192,15 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="bg-gray-900 text-white text-center py-6">
-  <p>&copy; 2025 DCB – Design Create Build. All rights reserved.</p>
-  <p>
-    <a href="https://www.facebook.com/dcbhomes" target="_blank" class="underline text-blue-400 hover:text-blue-300">Facebook</a>
-  </p>
-</footer>
+    <p>&copy; 2025 DCB – Design Create Build. All rights reserved.</p>
+    <p class="mt-2">
+      <a href="https://www.facebook.com/dcbhomes/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">
+        <i class="fab fa-facebook fa-lg mr-1"></i>Follow us on Facebook
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
