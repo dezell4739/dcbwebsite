@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DCB – Design Create Build</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-papoyhC8z9xkgN7l9D0Ab7DoqHJ+u8kuSkULgZ1u5ghI/0peh6nFOkWkS2DIlA1HvT3Z0zAZZ7oDw7P88t+k1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-white text-gray-800 font-sans">
+
   <!-- Header with Logo -->
   <header class="bg-gray-900 text-white py-12 text-center">
     <img src="https://dcb-homes-assets.netlify.app/logo.png" alt="DCB Logo" class="mx-auto w-72 mb-4">
@@ -51,6 +52,7 @@
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-3xl font-bold mb-6 text-center">Our Work</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Replace these with your real images -->
         <img src="img1.jpg" alt="Project 1" class="rounded-lg shadow-md" />
         <img src="img2.jpg" alt="Project 2" class="rounded-lg shadow-md" />
         <img src="img3.jpg" alt="Project 3" class="rounded-lg shadow-md" />
@@ -134,7 +136,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer with Facebook Link -->
   <footer class="bg-gray-900 text-white text-center py-6">
     <p>&copy; 2025 DCB – Design Create Build. All rights reserved.</p>
     <p class="mt-2">
@@ -143,5 +145,6 @@
       </a>
     </p>
   </footer>
+
 </body>
 </html>
