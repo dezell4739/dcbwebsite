@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DCB – Design Create Build</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </head>
 <body class="bg-white text-gray-800 font-sans">
   <!-- Header with Logo -->
@@ -45,30 +49,30 @@
     </div>
   </section>
 
-<!-- Gallery Section -->
-<section class="py-12 bg-gray-100">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold mb-6 text-center">Our Work</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <img src="img1.jpg" alt="Project 1" class="rounded-lg shadow-md" />
-      <img src="img2.jpg" alt="Project 2" class="rounded-lg shadow-md" />
-      <img src="img3.jpg" alt="Project 3" class="rounded-lg shadow-md" />
-      <img src="img4.jpg" alt="Project 4" class="rounded-lg shadow-md" />
-      <img src="img5.jpg" alt="Project 5" class="rounded-lg shadow-md" />
-      <img src="img6.jpg" alt="Project 6" class="rounded-lg shadow-md" />
-      <img src="img7.jpg" alt="Project 7" class="rounded-lg shadow-md" />
-      <img src="img8.jpg" alt="Project 8" class="rounded-lg shadow-md" />
-      <img src="img9.jpg" alt="Project 9" class="rounded-lg shadow-md" />
-      <img src="img10.jpg" alt="Project 10" class="rounded-lg shadow-md" />
-      <img src="img11.jpg" alt="Project 11" class="rounded-lg shadow-md" />
-      <img src="img12.jpg" alt="Project 12" class="rounded-lg shadow-md" />
-      <img src="img13.jpg" alt="Project 13" class="rounded-lg shadow-md" />
-      <img src="img14.jpg" alt="Project 14" class="rounded-lg shadow-md" />
-      <img src="img15.jpg" alt="Project 15" class="rounded-lg shadow-md" />
-      <img src="img16.jpg" alt="Project 16" class="rounded-lg shadow-md" />
+  <!-- Gallery Section -->
+  <section class="py-12 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6 text-center">Our Work</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="img1.jpg" alt="Project 1" class="rounded-lg shadow-md" />
+        <img src="img2.jpg" alt="Project 2" class="rounded-lg shadow-md" />
+        <img src="img3.jpg" alt="Project 3" class="rounded-lg shadow-md" />
+        <img src="img4.jpg" alt="Project 4" class="rounded-lg shadow-md" />
+        <img src="img5.jpg" alt="Project 5" class="rounded-lg shadow-md" />
+        <img src="img6.jpg" alt="Project 6" class="rounded-lg shadow-md" />
+        <img src="img7.jpg" alt="Project 7" class="rounded-lg shadow-md" />
+        <img src="img8.jpg" alt="Project 8" class="rounded-lg shadow-md" />
+        <img src="img9.jpg" alt="Project 9" class="rounded-lg shadow-md" />
+        <img src="img10.jpg" alt="Project 10" class="rounded-lg shadow-md" />
+        <img src="img11.jpg" alt="Project 11" class="rounded-lg shadow-md" />
+        <img src="img12.jpg" alt="Project 12" class="rounded-lg shadow-md" />
+        <img src="img13.jpg" alt="Project 13" class="rounded-lg shadow-md" />
+        <img src="img14.jpg" alt="Project 14" class="rounded-lg shadow-md" />
+        <img src="img15.jpg" alt="Project 15" class="rounded-lg shadow-md" />
+        <img src="img16.jpg" alt="Project 16" class="rounded-lg shadow-md" />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Contact Form -->
   <section class="py-12">
@@ -129,11 +133,13 @@
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-3xl font-bold mb-6 text-center">Serving Mariposa, CA</h2>
       <iframe class="w-full h-[450px] rounded" loading="lazy" allowfullscreen frameborder="0"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.1380063138775!2d-119.96658662426628!3d37.48455372815426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096e16c30c9cd21%3A0x6fc10a426c7e6d77!2sMariposa%2C%20CA%2095338!5e0!3m2!1sen!2sus!4v1720285643556"></iframe>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.1380063138775!2d-119.96658662426628!3d37.48455372815426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096e16c30c9cd21%3A0x6fc10a426c7e6d77!2sMariposa%2C%20CA%2095338!5e0!3m2!1sen!2sus!4v1720285643556">
+      </iframe>
     </div>
   </section>
 
-<footer class="bg-gray-900 text-white text-center py-6">
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
     <p>&copy; 2025 DCB – Design Create Build. All rights reserved.</p>
     <p class="mt-2">
       <a href="https://www.facebook.com/profile.php?id=61577983210576" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">
