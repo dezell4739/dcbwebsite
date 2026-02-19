@@ -61,49 +61,123 @@
     </div>
   </section>
 
-  <!-- Gallery Section -->
+  <!-- Gallery Section (AUTO-DETECTS FILENAMES) -->
   <section class="py-12 bg-gray-100">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-3xl font-bold mb-6 text-center">Our Work</h2>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        <!-- Repeat pattern for your images -->
-        <a href="img1 (1).webp" data-lightbox="gallery">
-          <picture>
-            <source srcset="img1 (1).webp" type="image/webp">
-            <img src="img1 (1).jpg" loading="lazy" alt="New home construction project in Mariposa"
-              class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105" />
-          </picture>
+      <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <!-- Keep these as simple placeholders; JS will assign correct src/href -->
+        <a class="gallery-item block" data-base="img1" data-alt="New home construction project in Mariposa" data-lightbox="gallery">
+          <img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="New home construction project in Mariposa">
+        </a>
+        <a class="gallery-item block" data-base="img2" data-alt="Modern residential remodel in Mariposa County" data-lightbox="gallery">
+          <img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Modern residential remodel in Mariposa County">
+        </a>
+        <a class="gallery-item block" data-base="img3" data-alt="Kitchen renovation and interior upgrade in Mariposa" data-lightbox="gallery">
+          <img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Kitchen renovation and interior upgrade in Mariposa">
         </a>
 
-        <a href="img2 (1).webp" data-lightbox="gallery">
-          <picture>
-            <source srcset="img2 (1).webp" type="image/webp">
-            <img src="img2 (1).jpg" loading="lazy" alt="Modern residential remodel in Mariposa County"
-              class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105" />
-          </picture>
-        </a>
+        <a class="gallery-item block" data-base="img4" data-alt="Framing and residential build site Mariposa" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Framing and residential build site Mariposa"></a>
+        <a class="gallery-item block" data-base="img5" data-alt="Bathroom remodel project for Mariposa client" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Bathroom remodel project for Mariposa client"></a>
+        <a class="gallery-item block" data-base="img6" data-alt="Custom home exterior finish near Yosemite area" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Custom home exterior finish near Yosemite area"></a>
+        <a class="gallery-item block" data-base="img7" data-alt="Roofing and exterior siding in Mariposa Hills" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Roofing and exterior siding in Mariposa Hills"></a>
+        <a class="gallery-item block" data-base="img8" data-alt="Mariposa new build foundation prep" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Mariposa new build foundation prep"></a>
+        <a class="gallery-item block" data-base="img9" data-alt="Home expansion and remodeling in Mariposa County" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Home expansion and remodeling in Mariposa County"></a>
 
-        <a href="img3 (1).webp" data-lightbox="gallery">
-          <picture>
-            <source srcset="img3 (1).webp" type="image/webp">
-            <img src="img3 (1).jpg" loading="lazy" alt="Kitchen renovation and interior upgrade in Mariposa"
-              class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105" />
-          </picture>
-        </a>
+        <a class="gallery-item block" data-base="img10" data-alt="Residential deck and patio build in Mariposa" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Residential deck and patio build in Mariposa"></a>
+        <a class="gallery-item block" data-base="img11" data-alt="Land clearing and grading project in Mariposa area" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Land clearing and grading project in Mariposa area"></a>
+        <a class="gallery-item block" data-base="img12" data-alt="Whole home renovation project in Mariposa" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Whole home renovation project in Mariposa"></a>
+        <a class="gallery-item block" data-base="img13" data-alt="Custom carpentry and trim work – Mariposa home" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Custom carpentry and trim work – Mariposa home"></a>
+        <a class="gallery-item block" data-base="img14" data-alt="Interior flooring and drywall install in Mariposa" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Interior flooring and drywall install in Mariposa"></a>
+        <a class="gallery-item block" data-base="img15" data-alt="Exterior finish work on Mariposa remodel" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Exterior finish work on Mariposa remodel"></a>
+        <a class="gallery-item block" data-base="img16" data-alt="Garage conversion for additional living space Mariposa" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Garage conversion for additional living space Mariposa"></a>
+        <a class="gallery-item block" data-base="img17" data-alt="General contractor deck rebuild project in Mariposa" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="General contractor deck rebuild project in Mariposa"></a>
+        <a class="gallery-item block" data-base="img18" data-alt="Basement renovation and framing – Mariposa area" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Basement renovation and framing – Mariposa area"></a>
+        <a class="gallery-item block" data-base="img19" data-alt="Interior remodel with modern design in Mariposa" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Interior remodel with modern design in Mariposa"></a>
 
-        <!-- ...keep the rest of img4 - img26 exactly like you had them... -->
-
-        <a href="img26 (1).webp" data-lightbox="gallery">
-          <picture>
-            <source srcset="img26 (1).webp" type="image/webp">
-            <img src="img26 (1).jpg" loading="lazy" alt="Concrete work and driveway install in Mariposa"
-              class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105" />
-          </picture>
-        </a>
-      </div><!-- ✅ CLOSES GALLERY GRID -->
+        <a class="gallery-item block" data-base="img20" data-alt="Mariposa home extension and framing project" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Mariposa home extension and framing project"></a>
+        <a class="gallery-item block" data-base="img21" data-alt="Modern kitchen update for Mariposa residence" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Modern kitchen update for Mariposa residence"></a>
+        <a class="gallery-item block" data-base="img22" data-alt="Backyard patio renovation project in Mariposa" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Backyard patio renovation project in Mariposa"></a>
+        <a class="gallery-item block" data-base="img23" data-alt="Structural demolition project in Mariposa" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Structural demolition project in Mariposa"></a>
+        <a class="gallery-item block" data-base="img24" data-alt="Custom home landscaping project – Mariposa County" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Custom home landscaping project – Mariposa County"></a>
+        <a class="gallery-item block" data-base="img25" data-alt="Concrete work and driveway install in Mariposa" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Concrete work and driveway install in Mariposa"></a>
+        <a class="gallery-item block" data-base="img26" data-alt="Concrete work and driveway install in Mariposa" data-lightbox="gallery"><img class="rounded-lg shadow-md transition-transform duration-200 hover:scale-105 w-full h-auto" loading="lazy" alt="Concrete work and driveway install in Mariposa"></a>
+      </div>
     </div>
   </section>
+
+  <script>
+    (function () {
+      const enc = (s) => encodeURI(s); // handles spaces + parentheses safely
+
+      async function exists(path) {
+        try {
+          const res = await fetch(enc(path), { method: "HEAD", cache: "no-store" });
+          return res.ok;
+        } catch (e) {
+          return false;
+        }
+      }
+
+      async function pickBest(base) {
+        // Prefer webp if present, otherwise jpg.
+        const candidates = [
+          `${base}.webp`,
+          `${base} (1).webp`,
+          `${base}.jpg`,
+          `${base} (1).jpg`
+        ];
+
+        for (const c of candidates) {
+          if (await exists(c)) return c;
+        }
+        return null;
+      }
+
+      async function pickThumb(base) {
+        // Prefer jpg for thumb (widest compatibility), else webp.
+        const candidates = [
+          `${base}.jpg`,
+          `${base} (1).jpg`,
+          `${base}.webp`,
+          `${base} (1).webp`
+        ];
+
+        for (const c of candidates) {
+          if (await exists(c)) return c;
+        }
+        return null;
+      }
+
+      async function fixGallery() {
+        const items = document.querySelectorAll(".gallery-item");
+        for (const a of items) {
+          const base = a.getAttribute("data-base");
+          const alt = a.getAttribute("data-alt") || "DCB project photo";
+          const img = a.querySelector("img");
+
+          const hrefFile = await pickBest(base);
+          const thumbFile = await pickThumb(base);
+
+          if (img) {
+            img.alt = alt;
+            if (thumbFile) img.src = enc(thumbFile);
+          }
+
+          if (hrefFile) {
+            a.href = enc(hrefFile);
+          } else {
+            // If nothing found, disable the link so it doesn't open broken lightbox
+            a.removeAttribute("href");
+            a.classList.add("opacity-40", "cursor-not-allowed");
+          }
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", fixGallery);
+    })();
+  </script>
 
   <!-- Brushing Project – Before & After -->
   <section class="bg-white py-12">
