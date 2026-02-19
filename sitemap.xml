@@ -23,6 +23,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+    <!-- City Page -->
+  <url>
+  <loc>https://dcb.homes/oakhurst-general-contractor.html</loc>
+  <lastmod>2026-02-19</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
 
   <url>
     <loc>https://dcb.homes/service-areas.html</loc>
@@ -81,6 +89,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
+    <!-- City Page -->
+  <url>
+  <loc>https://dcb.homes/atwater-general-contractor.html</loc>
+  <lastmod>2026-02-19</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
 
   <!-- Utility -->
   <url>
