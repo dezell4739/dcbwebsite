@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.dcb.homes/sitemap.xml
+
+Sitemap: https://dcb.homes/sitemap.xml
