@@ -58,14 +58,6 @@
     <priority>0.3</priority>
   </url>
 
-  <!-- Verification -->
-  <url>
-    <loc>https://www.dcb.homes/google3fe1b3b7f6eb2c87.html</loc>
-    <lastmod>2026-02-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-
   <!-- City / Local Landing Pages -->
   <url>
     <loc>https://www.dcb.homes/general-contractor-merced-ca.html</loc>
@@ -118,7 +110,7 @@
   </url>
 
   <url>
-    <loc>https://www.dcb.homes/brush-clearing-mariposa.html</loc>
+    <loc>https://www.dcb.homes/brush-clearing-mariposa-ca.html</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
