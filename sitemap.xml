@@ -22,12 +22,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-  <loc>https://www.dcb.homes/brush-clearing-mariposa-case-study.html</loc>
-  <lastmod>2026-02-22</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
 
   <url>
     <loc>https://www.dcb.homes/projects.html</loc>
@@ -62,6 +56,14 @@
     <lastmod>2026-02-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+
+  <!-- Case Study -->
+  <url>
+    <loc>https://www.dcb.homes/brush-clearing-mariposa-case-study.html</loc>
+    <lastmod>2026-02-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- City / Local Landing Pages -->
@@ -115,8 +117,9 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- FIXED: correct Mariposa brush clearing URL -->
   <url>
-    <loc>https://www.dcb.homes/brush-clearing-mariposa-ca.html</loc>
+    <loc>https://www.dcb.homes/brush-clearing-mariposa.html</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
