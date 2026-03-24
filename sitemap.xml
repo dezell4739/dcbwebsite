@@ -66,7 +66,14 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- City / Local Landing Pages -->
+  <!-- General Contractor / Local Landing Pages -->
+  <url>
+    <loc>https://www.dcb.homes/general-contractor-mariposa-ca.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
     <loc>https://www.dcb.homes/general-contractor-merced-ca.html</loc>
     <lastmod>2026-02-19</lastmod>
@@ -75,14 +82,7 @@
   </url>
 
   <url>
-    <loc>https://www.dcb.homes/atwater-general-contractor.html</loc>
-    <lastmod>2026-02-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.dcb.homes/oakhurst-general-contractor.html</loc>
+    <loc>https://www.dcb.homes/general-contractor-oakhurst-ca.html</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -95,7 +95,14 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Service Pages (Mariposa) -->
+  <url>
+    <loc>https://www.dcb.homes/home-builder-merced-ca.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Service Pages -->
   <url>
     <loc>https://www.dcb.homes/remodeling-mariposa-ca.html</loc>
     <lastmod>2026-02-19</lastmod>
@@ -111,13 +118,19 @@
   </url>
 
   <url>
+    <loc>https://www.dcb.homes/land-prep-mariposa-ca.html</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.dcb.homes/demolition-mariposa-ca.html</loc>
     <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- FIXED: correct Mariposa brush clearing URL -->
   <url>
     <loc>https://www.dcb.homes/brush-clearing-mariposa.html</loc>
     <lastmod>2026-02-19</lastmod>
