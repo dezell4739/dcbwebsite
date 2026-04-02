@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Driveway & Road Construction Mariposa CA | Rural Access & Grading | DCB</title>
+
+  <meta name="description" content="Need driveway or road construction in Mariposa CA? DCB builds rural driveways, access roads, grading, culverts, and site prep for foothill and mountain properties.">
+
+  <link rel="canonical" href="https://www.dcb.homes/driveway-road-construction-mariposa-ca.html" />
+
+  <meta property="og:title" content="Driveway & Road Construction Mariposa CA | Rural Access & Grading | DCB" />
+  <meta property="og:description" content="DCB builds rural driveways, access roads, grading, and site prep for foothill and mountain properties in Mariposa County and surrounding areas." />
+  <meta property="og:url" content="https://www.dcb.homes/driveway-road-construction-mariposa-ca.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.dcb.homes/logo.webp" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .container-max { max-width: 1100px; }
+    .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <div class="bg-gray-900 text-white">
+    <div class="container-max mx-auto px-4 py-2 flex justify-between text-sm">
+      <div>CA Licensed Contractor • Mariposa County</div>
+      <a href="tel:12093479602" class="font-semibold">📞 209-347-9602</a>
+    </div>
+  </div>
+
+  <header class="bg-white border-b sticky top-0 z-40">
+    <div class="container-max mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/logo-small.webp" class="h-10" alt="DCB logo">
+        <span class="font-bold">DCB – Design Create Build</span>
+      </a>
+
+      <nav class="hidden md:flex gap-6 font-semibold">
+        <a href="/services.html">Services</a>
+        <a href="/projects.html">Projects</a>
+        <a href="/service-areas.html">Service Areas</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+
+      <a href="tel:12093479602" class="bg-green-600 text-white px-5 py-2 rounded-lg font-bold">
+        Call Now
+      </a>
+    </div>
+  </header>
+
+  <section class="bg-gray-900 text-white py-20">
+    <div class="container-max mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Driveway & Road Construction in <span class="text-green-400">Mariposa CA</span>
+        </h1>
+
+        <p class="mt-5 text-lg text-gray-200">
+          Rural Driveways • Access Roads • Grading • Culverts • Site Access Improvements
+        </p>
+
+        <p class="mt-4 text-gray-200">
+          DCB Design Create Build specializes in durable construction solutions for foothill and rural properties throughout Mariposa County and surrounding areas.
+        </p>
+
+        <p class="mt-4 text-gray-200">
+          We build and improve driveways and access roads for hillside homes, rural properties, new construction, and difficult terrain.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="tel:12093479602" class="bg-green-600 px-7 py-4 rounded-xl font-bold">
+            📞 Call / Text
+          </a>
+          <a href="/contact.html#quote" class="bg-white text-black px-7 py-4 rounded-xl font-bold">
+            Free Estimate
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white/10 p-6 rounded-2xl shadow-soft">
+        <h2 class="text-2xl font-bold">Get a Driveway or Road Quote</h2>
+
+        <form class="mt-5 space-y-3" action="https://formspree.io/f/xjkrqgjn" method="POST">
+          <input type="hidden" name="_next" value="https://www.dcb.homes/thank-you.html">
+          <input type="hidden" name="service" value="Driveway / Road Construction">
+
+          <input class="w-full p-3 rounded text-black" name="name" placeholder="Name" required>
+          <input class="w-full p-3 rounded text-black" name="phone" placeholder="Phone" required>
+          <input class="w-full p-3 rounded text-black" name="address" placeholder="Project Address">
+
+          <textarea class="w-full p-3 rounded text-black" name="message" placeholder="Tell us about your driveway, road, grading, drainage, or access project"></textarea>
+
+          <button class="w-full bg-green-600 py-3 rounded font-bold text-white">
+            Get Free Estimate
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14">
+    <div class="container-max mx-auto px-4 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl font-extrabold">Driveways and Access Built for Rural Properties</h2>
+        <p class="mt-4">
+          Access can make or break a property. Whether you need a new driveway, a longer private road, or improvements to an existing access route, DCB builds practical solutions designed for foothill terrain, drainage, and long-term use.
+        </p>
+        <p class="mt-4">
+          We understand steep ground, rural setbacks, construction access, and the importance of getting vehicles, equipment, and deliveries in safely.
+        </p>
+      </div>
+
+      <div class="bg-gray-100 p-6 rounded-2xl shadow-soft">
+        <h2 class="text-2xl font-bold">Our Driveway & Road Services</h2>
+        <ul class="mt-4 space-y-2 list-disc list-inside">
+          <li>New driveway construction</li>
+          <li>Private road building</li>
+          <li>Road widening and reshaping</li>
+          <li>Grading and regrading</li>
+          <li>Culvert installation</li>
+          <li>Drainage improvements</li>
+          <li>Pad and site access prep</li>
+          <li>Rock, base, and surface prep</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 py-14">
+    <div class="container-max mx-auto px-4">
+      <h2 class="text-3xl font-extrabold text-center">Why Property Owners Call DCB</h2>
+
+      <div class="mt-8 grid md:grid-cols-4 gap-6 text-center">
+        <div class="bg-white p-6 rounded-xl shadow-soft">
+          <div class="font-bold">Rural Experience</div>
+          <p class="mt-2 text-sm text-gray-600">Built for foothill roads, mountain access, and difficult terrain.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-soft">
+          <div class="font-bold">Equipment Ready</div>
+          <p class="mt-2 text-sm text-gray-600">Excavation and grading capability to handle real access work.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-soft">
+          <div class="font-bold">Problem Solving</div>
+          <p class="mt-2 text-sm text-gray-600">Solutions for drainage, slope, delivery access, and site approach.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-soft">
+          <div class="font-bold">Clear Scope</div>
+          <p class="mt-2 text-sm text-gray-600">Straightforward pricing and practical work plans.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14">
+    <div class="container-max mx-auto px-4 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl font-extrabold">Common Projects We Handle</h2>
+        <ul class="mt-4 space-y-3 list-disc list-inside">
+          <li>New rural home driveway installation</li>
+          <li>Access roads for construction sites</li>
+          <li>Repairing washed out or uneven roads</li>
+          <li>Improving access for deliveries and equipment</li>
+          <li>Drainage fixes to protect drive surfaces</li>
+          <li>Widening tight approaches and turn areas</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-3xl font-extrabold">Built with the Full Project in Mind</h2>
+        <p class="mt-4">
+          Driveway and road work is often the first step in a larger project. We can help tie access work into site prep, grading, land prep, excavation, and future building plans so the property is set up the right way from the start.
+        </p>
+        <p class="mt-4">
+          That means fewer headaches later when it is time for utility work, deliveries, concrete, or vertical construction.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray-100 py-14">
+    <div class="container-max mx-auto px-4">
+      <h2 class="text-3xl font-extrabold text-center">FAQ</h2>
+
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-soft">
+          <h3 class="font-bold">Do you build driveways for steep or rural properties?</h3>
+          <p class="mt-2 text-gray-700">
+            Yes. We work on foothill and rural properties where slope, drainage, and access require more planning than a standard flat driveway.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-soft">
+          <h3 class="font-bold">Can you improve an existing driveway instead of building a new one?</h3>
+          <p class="mt-2 text-gray-700">
+            Yes. We can regrade, widen, improve drainage, and rebuild problem sections depending on the condition of the road or driveway.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-soft">
+          <h3 class="font-bold">Do you install culverts and drainage?</h3>
+          <p class="mt-2 text-gray-700">
+            Yes. Proper drainage is one of the most important parts of long-lasting driveway and road construction.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-soft">
+          <h3 class="font-bold">Can this be tied into site prep for a new build?</h3>
+          <p class="mt-2 text-gray-700">
+            Absolutely. Access, grading, and site prep often go together, and we can help plan the work as part of a bigger construction project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-green-700 text-white py-14 text-center">
+    <div class="container-max mx-auto px-4">
+      <h2 class="text-4xl font-extrabold">Need Better Access to Your Property?</h2>
+      <p class="mt-4 text-lg">
+        Call DCB for driveway construction, road building, grading, and rural access improvements in Mariposa County and surrounding areas.
+      </p>
+
+      <div class="mt-6 flex justify-center gap-3 flex-wrap">
+        <a href="tel:12093479602" class="bg-white text-green-800 px-8 py-4 rounded-xl font-bold">
+          📞 Call Now
+        </a>
+        <a href="/contact.html#quote" class="bg-black px-8 py-4 rounded-xl font-bold">
+          Get Estimate
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white text-center py-8">
+    <p>© 2026 DCB – Design Create Build</p>
+  </footer>
+
+</body>
+</html>
