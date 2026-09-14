@@ -1,12 +1,12 @@
 {
   "name": "DCB OS",
   "short_name": "DCB OS",
-  "description": "Design \u2022 Create \u2022 Build \u2014 Dallas's project album and field operating system.",
+  "description": "Design \u2022 Create \u2022 Build",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0b0d10",
-  "theme_color": "#0b0d10",
+  "background_color": "#090b0f",
+  "theme_color": "#090b0f",
   "orientation": "any",
   "icons": [
     {
