@@ -1,5 +1,368 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#090b0f"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-192.png"><title>DCB OS</title><style>
-:root{--bg:#07090c;--p:#10151b;--p2:#18202a;--line:#2d3945;--gold:#f2b632;--text:#f7f9fb;--muted:#92a0ad}*{box-sizing:border-box}html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;overflow:hidden}button,input{font:inherit}button{cursor:pointer}#app{height:100dvh;display:grid;grid-template-rows:64px minmax(0,1fr) 88px;background:radial-gradient(circle at 40% 20%,#151d25 0,#080b0f 48%,#050607 100%)}.top{display:flex;align-items:center;gap:14px;padding:0 16px;border-bottom:1px solid var(--line);background:#0a0e13;z-index:20}.brand{font-size:22px;font-weight:950}.brand b{color:var(--gold)}.tag{font-size:9px;letter-spacing:.18em;color:var(--muted)}.title{font-weight:850}.spacer{flex:1}.topbtn,.mode{border:1px solid var(--line);background:var(--p2);color:white;border-radius:11px;padding:9px 12px;font-weight:850}.mode.active,.topbtn.gold{border-color:var(--gold);color:var(--gold)}.main{display:grid;grid-template-columns:80px minmax(0,1fr) 310px;min-height:0}.rail{background:#0c1117;border-right:1px solid var(--line);padding:9px 7px;display:flex;flex-direction:column;gap:7px}.rbtn{min-height:57px;border:1px solid var(--line);background:var(--p2);color:white;border-radius:13px;font-size:10px;font-weight:850;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px}.rbtn strong{font-size:20px}.rbtn.active{border-color:var(--gold);color:var(--gold);background:#211a0c}.work{position:relative;min-width:0;min-height:0;background:#000;overflow:hidden}#photo{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none}#draw{position:absolute;inset:0;width:100%;height:100%;z-index:3;touch-action:none}.label{position:absolute;left:14px;top:14px;z-index:7;background:#080b0fcc;border:1px solid #ffffff22;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:900}.tools{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:8;display:flex;gap:7px;padding:8px;background:#0b0f14dd;border:1px solid var(--line);border-radius:15px;backdrop-filter:blur(8px);max-width:94%;overflow:auto}.tool{border:1px solid var(--line);background:var(--p2);color:white;border-radius:10px;padding:9px 11px;font-size:11px;font-weight:850;white-space:nowrap}.tool.active{border-color:var(--gold);color:var(--gold)}.right{border-left:1px solid var(--line);background:#0c1117;display:flex;flex-direction:column}.rh{padding:13px 14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between}.jb{padding:12px;overflow:auto;display:flex;flex-direction:column;gap:10px}.card{border:1px solid var(--line);border-radius:14px;background:linear-gradient(#151c24,#10151b);padding:12px}.card h3{margin:0 0 8px;color:var(--gold);font-size:12px;letter-spacing:.08em}.card p{margin:0;color:#dce3e8;font-size:12px;line-height:1.45}.quick{display:grid;grid-template-columns:1fr 1fr;gap:7px}.q{border:1px solid var(--line);background:var(--p2);color:white;border-radius:9px;padding:9px 7px;font-size:11px;font-weight:800}.cmd{display:flex;gap:7px}.cmd input{flex:1;min-width:0;background:#090d11;border:1px solid var(--line);border-radius:9px;padding:9px;color:white}.cmd button{border:1px solid var(--gold);background:#211a0a;color:var(--gold);border-radius:9px;padding:0 11px;font-weight:900}.bottom{border-top:1px solid var(--line);background:#0a0e13;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px 10px calc(8px + env(safe-area-inset-bottom))}.story{display:flex;gap:6px}.small{border:1px solid var(--line);background:var(--p2);color:white;border-radius:10px;padding:10px 11px;font-weight:850}.film{display:flex;gap:8px;overflow-x:auto;min-width:0}.thumb{position:relative;height:66px;min-width:98px;border:2px solid transparent;border-radius:10px;overflow:hidden;background:#14191f}.thumb.active{border-color:var(--gold)}.thumb img{width:100%;height:100%;object-fit:cover}.thumb.blank{display:grid;place-items:center;background:linear-gradient(135deg,#202a34,#0f141a)}.thumb span{position:absolute;left:0;right:0;bottom:0;background:#000a;font-size:9px;font-weight:900;padding:3px;text-align:center}.dot{position:absolute;right:5px;top:5px;width:8px;height:8px;border-radius:50%;background:var(--gold);display:none}.thumb.dirty .dot{display:block}.add{height:66px;min-width:82px;border:1px dashed #5a6774;background:transparent;color:#cad4dd;border-radius:10px;font-size:11px;font-weight:850}.compare{position:absolute;inset:0;z-index:11;background:#000;display:none}.compare.show{display:block}.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}#cmpAfter{clip-path:inset(0 50% 0 0)}#cmpRange{position:absolute;left:10%;bottom:30px;width:80%;z-index:12}.toast{position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:30;display:none;background:#0c1117f2;border:1px solid var(--line);border-radius:999px;padding:9px 14px;font-size:12px}.focus .top,.focus .rail,.focus .right,.focus .bottom{display:none!important}.focus #app{grid-template-rows:1fr}.focus .main{grid-template-columns:1fr}.focus .work{grid-column:1}@media(max-width:900px){#app{grid-template-rows:58px minmax(0,1fr) 76px}.main{grid-template-columns:62px minmax(0,1fr)}.right{display:none}.rail{padding:6px 4px}.rbtn{min-height:48px}.bottom{grid-template-columns:auto minmax(0,1fr)}.bottom>div:last-child{display:none}.thumb{height:56px;min-width:80px}.add{height:56px}.title,.modes{display:none}}@media(max-width:560px){.main{grid-template-columns:1fr}.rail{position:absolute;left:5px;top:64px;width:52px;z-index:15;background:transparent;border:0}.rbtn{background:#10151be8}.tools{left:58%;max-width:82%}.story{display:none}.brand{font-size:19px}.tag{display:none}}
-</style></head><body><div id="app"><div class="top"><div><div class="brand"><b>DCB</b> OS</div><div class="tag">DESIGN • CREATE • BUILD</div></div><div class="title">Project 001 — Pavilion Transformation</div><div class="spacer"></div><div class="modes"><button class="mode active">DESIGN</button><button class="mode">CREATE</button><button class="mode">BUILD</button></div><button class="topbtn" id="focusBtn">⛶ FOCUS</button><button class="topbtn gold">🎙 JARVIS</button></div><div class="main"><div class="rail"><button class="rbtn active" data-mode="draw"><strong>✏️</strong>DRAW</button><button class="rbtn" data-mode="erase"><strong>🧽</strong>ERASE</button><button class="rbtn" id="undoBtn"><strong>↶</strong>UNDO</button><button class="rbtn" id="redoBtn"><strong>↷</strong>REDO</button><button class="rbtn" id="compareBtn"><strong>↔</strong>COMPARE</button><button class="rbtn" id="clearBtn"><strong>🗑</strong>CLEAR</button></div><div class="work" id="work"><img id="photo" src="before.jpg"><canvas id="draw"></canvas><div class="label" id="label">BEFORE • 1/4</div><div class="tools"><button class="tool active" data-mode="draw">✏ Draw</button><button class="tool" data-mode="erase">Erase</button><button class="tool" id="lineBtn">Line 4</button><button class="tool" id="colorBtn">Color</button><button class="tool" id="dupBtn">Duplicate</button><button class="tool" id="varsBtn">A/B/C/D</button><button class="tool" id="saveBtn">Save</button></div><div class="compare" id="compare"><img src="before.jpg"><img src="after.jpg" id="cmpAfter"><input id="cmpRange" type="range" min="0" max="100" value="50"></div><div class="toast" id="toast"></div></div><div class="right"><div class="rh"><b>JARVIS</b><span style="color:var(--muted);font-size:11px">Project brain</span></div><div class="jb"><div class="card"><h3>WHAT I SEE</h3><p id="see">Original BEFORE photo. Draw on a separate layer; the source photo stays untouched.</p></div><div class="card"><h3>QUICK ACTIONS</h3><div class="quick"><button class="q" data-cmd="new sketch">New sketch</button><button class="q" data-cmd="make 4 variants">4 variants</button><button class="q" data-cmd="go to after">Go to after</button><button class="q" data-cmd="compare">Compare</button><button class="q" data-cmd="play story">Play story</button><button class="q" data-cmd="focus">Focus mode</button></div></div><div class="card"><h3>TALK / TYPE</h3><div class="cmd"><input id="cmd" placeholder="e.g. make 4 variants"><button id="run">GO</button></div><p style="margin-top:8px;color:var(--muted)">Local command shell now; real AI can be wired in later.</p></div><div class="card"><h3>NEXT LAYER</h3><p>Selected design → measurements → material takeoff → cost → Field Guide → proposal.</p></div></div></div></div><div class="bottom"><div class="story"><button class="small" id="prev">‹</button><button class="small" id="play">▶ STORY</button><button class="small" id="next">›</button></div><div class="film" id="film"></div><div><button class="small" id="addBtn">＋ PAGE</button></div></div></div><script>
-const start=[{id:'before',title:'BEFORE',src:'before.jpg',kind:'photo'},{id:'sketch',title:'SKETCH',src:'before.jpg',kind:'photo'},{id:'plan',title:'PLAN',src:null,kind:'blank'},{id:'after',title:'AFTER',src:'after.jpg',kind:'photo'}];let pages=JSON.parse(localStorage.getItem('dcb-v10-pages')||'null')||start,current=0,mode='draw',color='#ffcc3a',lw=4,drawing=false,last=null,hist=[],redos=[],timer=null;const photo=document.getElementById('photo'),canvas=document.getElementById('draw'),ctx=canvas.getContext('2d'),work=document.getElementById('work'),film=document.getElementById('film'),label=document.getElementById('label'),toast=document.getElementById('toast'),see=document.getElementById('see');function key(id){return'dcb-v10-draw-'+id}function persist(){localStorage.setItem('dcb-v10-pages',JSON.stringify(pages))}function size(){let r=work.getBoundingClientRect(),d=devicePixelRatio||1;canvas.width=Math.floor(r.width*d);canvas.height=Math.floor(r.height*d);canvas.style.width=r.width+'px';canvas.style.height=r.height+'px';ctx.setTransform(d,0,0,d,0,0)}function restore(){ctx.clearRect(0,0,canvas.width,canvas.height);hist=[];redos=[];let x=localStorage.getItem(key(pages[current].id));if(x){let im=new Image;im.onload=()=>ctx.drawImage(im,0,0,work.clientWidth,work.clientHeight);im.src=x}}function save(silent=true){localStorage.setItem(key(pages[current].id),canvas.toDataURL());render();if(!silent)say('Saved this page')}function snap(){hist.push(canvas.toDataURL());if(hist.length>30)hist.shift();redos=[]}function render(){film.innerHTML='';pages.forEach((p,i)=>{let b=document.createElement('button');b.className='thumb '+(i===current?'active ':'')+(p.kind==='blank'?'blank ':'');if(localStorage.getItem(key(p.id)))b.classList.add('dirty');b.innerHTML=p.kind==='blank'?`<b style="color:#7e8b97">BLANK</b><span>${p.title}</span><i class="dot"></i>`:`<img src="${p.src}"><span>${p.title}</span><i class="dot"></i>`;b.onclick=()=>show(i);film.appendChild(b)});let a=document.createElement('button');a.className='add';a.textContent='+ PAGE';a.onclick=add;film.appendChild(a)}function show(i){save(true);current=(i+pages.length)%pages.length;let p=pages[current];if(p.kind==='blank'||!p.src){photo.style.display='none';work.style.background='linear-gradient(135deg,#f3ecd9,#d8ceb7)'}else{photo.style.display='block';photo.src=p.src;work.style.background='#000'}label.textContent=`${p.title} • ${current+1}/${pages.length}`;see.textContent=p.id==='before'?'Original BEFORE photo. Draw on a separate layer; the source photo stays untouched.':p.id==='after'?'Real AFTER photo. Compare against BEFORE or add notes.':`${p.title} working page. This page keeps its own markup.`;requestAnimationFrame(()=>{size();restore();render()})}function say(m){toast.textContent=m;toast.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>toast.style.display='none',1500)}function add(){save(true);let id='p'+Date.now();pages.splice(current+1,0,{id,title:'NEW SKETCH',src:pages[current].src||'before.jpg',kind:'photo'});persist();show(current+1);say('New sketch page added')}function dup(){save(true);let p=pages[current],id='d'+Date.now();pages.splice(current+1,0,{...p,id,title:p.title+' COPY'});persist();show(current+1);say('Page duplicated')}function variants(){save(true);let p=pages[current],s=current+1;['A','B','C','D'].forEach((n,j)=>pages.splice(s+j,0,{...p,id:'v'+n+Date.now()+j,title:'VARIANT '+n}));persist();show(s);say('A/B/C/D pages created')}function setMode(m){mode=m;document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('active',b.dataset.mode===m))}document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));function pt(e){let r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}}canvas.onpointerdown=e=>{snap();drawing=true;last=pt(e);canvas.setPointerCapture(e.pointerId)};canvas.onpointermove=e=>{if(!drawing)return;let p=pt(e);ctx.lineCap='round';ctx.lineJoin='round';if(mode==='erase'){ctx.globalCompositeOperation='destination-out';ctx.lineWidth=28}else{ctx.globalCompositeOperation='source-over';ctx.strokeStyle=color;ctx.lineWidth=lw}ctx.beginPath();ctx.moveTo(last.x,last.y);ctx.lineTo(p.x,p.y);ctx.stroke();last=p};canvas.onpointerup=()=>{drawing=false;last=null;ctx.globalCompositeOperation='source-over';save(true)};undoBtn.onclick=()=>{if(!hist.length)return;redos.push(canvas.toDataURL());let x=hist.pop(),im=new Image;im.onload=()=>{ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(im,0,0,work.clientWidth,work.clientHeight);save(true)};im.src=x};redoBtn.onclick=()=>{if(!redos.length)return;hist.push(canvas.toDataURL());let x=redos.pop(),im=new Image;im.onload=()=>{ctx.clearRect(0,0,canvas.width,canvas.height);ctx.drawImage(im,0,0,work.clientWidth,work.clientHeight);save(true)};im.src=x};clearBtn.onclick=()=>{snap();ctx.clearRect(0,0,canvas.width,canvas.height);localStorage.removeItem(key(pages[current].id));render();say('Drawing layer cleared')};dupBtn.onclick=dup;varsBtn.onclick=variants;saveBtn.onclick=()=>save(false);addBtn.onclick=add;let ws=[4,8,14],wi=0;lineBtn.onclick=()=>{wi=(wi+1)%ws.length;lw=ws[wi];lineBtn.textContent='Line '+lw};let cs=['#ffcc3a','#7fd0ff','#ff6b6b','#fff','#67e480'],ci=0;colorBtn.onclick=()=>{ci=(ci+1)%cs.length;color=cs[ci];colorBtn.style.color=color};compareBtn.onclick=()=>compare.classList.toggle('show');cmpRange.oninput=()=>cmpAfter.style.clipPath=`inset(0 ${100-cmpRange.value}% 0 0)`;prev.onclick=()=>show(current-1);next.onclick=()=>show(current+1);play.onclick=()=>{if(timer){clearInterval(timer);timer=null;play.textContent='▶ STORY';return}play.textContent='■ STOP';show(0);timer=setInterval(()=>{if(current>=pages.length-1){clearInterval(timer);timer=null;play.textContent='▶ STORY'}else show(current+1)},1100)};focusBtn.onclick=()=>document.body.classList.toggle('focus');function runCmd(c){c=c.toLowerCase();if(c.includes('4 variant')||c.includes('abcd'))variants();else if(c.includes('new sketch')||c.includes('new page'))add();else if(c.includes('after'))show(pages.findIndex(p=>p.id==='after'));else if(c.includes('before'))show(pages.findIndex(p=>p.id==='before'));else if(c.includes('compare'))compareBtn.click();else if(c.includes('play')||c.includes('story'))play.click();else if(c.includes('focus'))focusBtn.click();else if(c.includes('duplicate'))dup();else say('Jarvis: command not mapped yet')}document.querySelectorAll('.q').forEach(b=>b.onclick=()=>runCmd(b.dataset.cmd));run.onclick=()=>{runCmd(cmd.value);cmd.value=''};cmd.onkeydown=e=>{if(e.key==='Enter')run.click()};if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js'));addEventListener('resize',()=>{size();restore()});render();setTimeout(()=>show(0),80);
-</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DCB OS — AI Design Engine</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:#07090c;
+  color:#f7f9fb;
+  font-family:Arial,sans-serif;
+}
+
+header{
+  padding:16px;
+  border-bottom:1px solid #29303a;
+  font-weight:900;
+}
+
+main{
+  display:grid;
+  grid-template-columns:1fr 360px;
+  min-height:90vh;
+}
+
+.stage,.panel{
+  padding:18px;
+}
+
+.panel{
+  border-left:1px solid #29303a;
+}
+
+.viewer{
+  background:#10151b;
+  border:1px solid #29303a;
+  border-radius:16px;
+  min-height:420px;
+  display:grid;
+  place-items:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.viewer img{
+  max-width:100%;
+  max-height:70vh;
+}
+
+.badge{
+  position:absolute;
+  top:12px;
+  left:12px;
+  background:#000c;
+  padding:7px 10px;
+  border-radius:20px;
+  z-index:2;
+}
+
+.tabs{
+  display:flex;
+  gap:8px;
+  margin-top:12px;
+  overflow:auto;
+}
+
+.tabs button{
+  background:#151b22;
+  color:white;
+  border:1px solid #39424e;
+  border-radius:10px;
+  padding:10px;
+}
+
+.tabs .active{
+  color:#f2b632;
+  border-color:#f2b632;
+}
+
+textarea{
+  width:100%;
+  min-height:140px;
+  background:#151b22;
+  color:white;
+  border:1px solid #39424e;
+  border-radius:12px;
+  padding:12px;
+  font-size:16px;
+}
+
+.generate{
+  width:100%;
+  margin-top:12px;
+  padding:14px;
+  border:0;
+  border-radius:12px;
+  background:#f2b632;
+  color:#111;
+  font-weight:900;
+  cursor:pointer;
+}
+
+.generate:disabled{
+  opacity:.5;
+}
+
+.status{
+  margin-top:14px;
+  color:#aeb7c2;
+}
+
+@media(max-width:850px){
+  main{grid-template-columns:1fr}
+  .panel{
+    border-left:0;
+    border-top:1px solid #29303a;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+DCB OS &nbsp; | &nbsp; DESIGN → CREATE → BUILD
+</header>
+
+<main>
+
+<section class="stage">
+
+<div class="viewer">
+  <span class="badge" id="badge">BEFORE</span>
+  <img id="mainImage" src="./before.jpg" alt="DCB Project">
+</div>
+
+<div class="tabs" id="tabs">
+
+<button
+class="active"
+data-src="./before.jpg"
+data-label="BEFORE">
+BEFORE
+</button>
+
+<button
+data-src="./after.jpg"
+data-label="REAL AFTER">
+REAL AFTER
+</button>
+
+</div>
+
+</section>
+
+
+<aside class="panel">
+
+<h2>Jarvis — AI Design</h2>
+
+<p>
+Tell Jarvis what you want to see.
+This sends a real request to the DCB OS backend.
+</p>
+
+<textarea
+id="instruction"
+placeholder="Example: Design a 12×16 heavy-timber pavilion with a dark metal roof, heavy posts and stone bases.">
+</textarea>
+
+<button
+class="generate"
+id="generate">
+GENERATE DESIGN
+</button>
+
+<div
+class="status"
+id="status">
+Ready.
+</div>
+
+</aside>
+
+</main>
+
+
+<script>
+
+const image =
+document.getElementById("mainImage");
+
+const badge =
+document.getElementById("badge");
+
+const tabs =
+document.getElementById("tabs");
+
+
+tabs.addEventListener("click",function(event){
+
+  const button = event.target;
+
+  if(!button.dataset.src){
+    return;
+  }
+
+  image.src =
+  button.dataset.src;
+
+  badge.textContent =
+  button.dataset.label;
+
+  const buttons =
+  tabs.querySelectorAll("button");
+
+  buttons.forEach(function(item){
+    item.classList.remove("active");
+  });
+
+  button.classList.add("active");
+
+});
+
+
+document
+.getElementById("generate")
+.addEventListener("click",async function(){
+
+  const instruction =
+  document
+  .getElementById("instruction")
+  .value
+  .trim();
+
+  const status =
+  document.getElementById("status");
+
+  const generateButton =
+  document.getElementById("generate");
+
+
+  if(!instruction){
+
+    status.textContent =
+    "Tell Jarvis what to design first.";
+
+    return;
+  }
+
+
+  generateButton.disabled = true;
+
+  status.textContent =
+  "Jarvis is generating a real AI design...";
+
+
+  try{
+
+    const response =
+    await fetch(
+      "/.netlify/functions/design",
+      {
+        method:"POST",
+
+        headers:{
+          "Content-Type":
+          "application/json"
+        },
+
+        body:JSON.stringify({
+          instruction:instruction
+        })
+      }
+    );
+
+
+    const data =
+    await response.json();
+
+
+    if(!response.ok || !data.ok){
+
+      throw new Error(
+        data.error ||
+        "Design request failed."
+      );
+
+    }
+
+
+    let imageSource = null;
+
+
+    if(data.image){
+
+      imageSource =
+      "data:image/png;base64," +
+      data.image;
+
+    }
+    else if(data.url){
+
+      imageSource =
+      data.url;
+
+    }
+
+
+    if(!imageSource){
+
+      throw new Error(
+        "The AI returned no image."
+      );
+
+    }
+
+
+    const newButton =
+    document.createElement("button");
+
+    newButton.textContent =
+    "AI DESIGN";
+
+    newButton.dataset.src =
+    imageSource;
+
+    newButton.dataset.label =
+    "AI DESIGN";
+
+
+    tabs.appendChild(
+      newButton
+    );
+
+
+    newButton.click();
+
+
+    status.textContent =
+    "AI design generated successfully.";
+
+
+  }
+  catch(error){
+
+    status.textContent =
+    "ERROR: " +
+    error.message;
+
+  }
+  finally{
+
+    generateButton.disabled =
+    false;
+
+  }
+
+});
+
+</script>
+
+</body>
+</html>
