@@ -53,14 +53,16 @@
         <h2 class="text-2xl font-extrabold">Request a Free Estimate</h2>
         <p class="mt-2 text-gray-700">Tell us what you need. We’ll respond quickly.</p>
 
-        <form class="mt-5 space-y-3" action="https://formspree.io/f/xjkrqgjn" method="POST">
+        <form class="mt-5 space-y-3" action="https://formsubmit.co/76acbc14719172155a73434a05b90b19" method="POST">
           <input type="hidden" name="_next" value="https://dcb.homes/thank-you.html">
-          <input type="hidden" name="_replyto" value="dezell4739@gmail.com">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="hidden" name="_subject" value="New DCB Website Inquiry">
+          <input type="hidden" name="_autoresponse" value="Thank you for contacting DCB. We offer free preliminary estimates based on the photos, measurements, and project details you provide. Professional on-site consultations are $150 per hour, including drive time. Additional travel-zone charges may apply. Grading depends on suitable weather and ground conditions. We will review your request before discussing scheduling or final pricing.">
           <input type="hidden" name="page" value="Contact Page">
 
           <input class="w-full p-3 border rounded-lg" name="name" required placeholder="Your Name">
           <input class="w-full p-3 border rounded-lg" name="phone" required placeholder="Phone Number">
-          <input class="w-full p-3 border rounded-lg" name="email" placeholder="Email (optional)">
+          <input class="w-full p-3 border rounded-lg" type="email" name="email" autocomplete="email" placeholder="Email (optional)">
           <select class="w-full p-3 border rounded-lg" name="service" required>
             <option value="">Select Service</option>
             <option>Brush Clearing / Defensible Space</option>
